@@ -1,0 +1,89 @@
+.appProjectForm {
+  padding: 20px;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  background: #999;
+}
+.projectsList {
+  width: 440px;
+  margin: 20px auto 0;
+}
+.projectsList > div {
+  margin-bottom: 10px;
+}
+.projectContainer {
+  padding: 10px;
+  background: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.TaskForm {
+  display: flex;
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  background: #eee;
+}
+.TaskForm input {
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 0 0 0 5px;
+}
+.TaskForm button {
+  width: 90px;
+  height: 30px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
+.tasksList {
+  background: #fff;
+  padding: 0 0 10px;
+  border-radius: 0 0 10px 10px;
+}
+.tasksList > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  align-items: center;
+  border-top: 1px solid #eee;
+  cursor: pointer;
+  height: 36px;
+}
+.tasksList > div:hover {
+  background: cornsilk;
+}
+.tasksList > div:hover .TaskControlls {
+  visibility: visible;
+}
+.TaskControlls {
+  display: flex;
+}
+.tasksList button {
+  background: none;
+  border: none;
+  padding: 0 2px;
+  cursor: pointer;
+  line-height: 0;
+}
+.tasksList button[disabled] svg {
+  fill: #ddd;
+}
+.taskTitle {
+  flex-grow: 1;
+}
+.actionButton {
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  margin: 0 5px;
+  cursor: pointer;
+}
