@@ -1,38 +1,8 @@
-main > p {
+main > p:not(.error) {
 	font-weight: bold;
 	font-size: 18px;
 }
-
-
-
-.hidden-block {
-	display: none;
-}
-.error-block {
-	display: block;
-	width: 400px;
-	min-height: 50px;
-	margin: 25px auto;
-	padding: 25px 5px ;
-	border-radius: 8px;
-	border-color: #ddd;
-	background-color: #f5f5f5;
+p.error {
+	font-size: 20px;
 	color: #fb6470;
-	text-align: center;
-	position: relative;
-}
-.error-block svg.close {
-	fill: #484848;
-	position: absolute;
-	right: 10px;
-	top: 10px;
-}
-.error-block svg.close:hover{
-	cursor: pointer;
-}
-.btn-retry {
-	height: 30px;
-	padding: 5px;
-	background-color: #eee;
-	border-radius: 8px;
 }
