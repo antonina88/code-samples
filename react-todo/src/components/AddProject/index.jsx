@@ -18,9 +18,9 @@ function AddProject({
         onChange={onChange}
       />
       <button
-        onClick={() => { createProject(title); }}
+        onClick={() => { if (title.trim()) createProject(title); }}
       >
-        Add new project
+        Add&nbsp;new&nbsp;project
       </button>
     </div>
   );

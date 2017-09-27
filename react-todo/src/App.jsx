@@ -5,7 +5,7 @@ import AddProject from "./components/AddProject";
 import ProjectsList from "./containers/ProjectsList";
 import ProjectPage from "./containers/ProjectPage";
 
-import { Route, Redirect } from "react-router";
+import { Route } from "react-router";
 
 function MainComponent() {
   return (
@@ -15,10 +15,6 @@ function MainComponent() {
       <ProjectsList />
     </div>
   );
-}
-
-function SomeOtherApp() {
-  return <div>Other page</div>
 }
 
 class App extends Component {

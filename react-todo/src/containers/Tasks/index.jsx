@@ -8,16 +8,11 @@ import TasksList from "../../components/TasksList";
 class Tasks extends Component {
   render() {
     const { addTask, projectId } = this.props;
-
+    
     return (
       <div>
-        <TaskForm
-          onSubmit={addTask(projectId)}
-        />
-
-        <TasksList
-          projectId={projectId}
-        />
+        <TaskForm onSubmit={addTask(projectId)} />
+        <TasksList projectId={projectId} />
       </div>
     );
   }

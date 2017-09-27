@@ -1,47 +1,104 @@
 .appProjectForm {
-  padding: 20px;
-  width: 400px;
-  height: 50px;
+  padding: 15px 10px;
+  width: 780px;
+  height: 30px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0 auto;
-  background: #999;
+  background: #4576b3;
+}
+.appProjectForm input {
+  width: 640px;
+  height: 31px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #eee;
+  padding-left: 5px;
+}
+.appProjectForm button{
+  width: 150px;
+  height: 35px;
+  border: none;
+  background: #71c897;
+  line-height: 35px;
+  color: #fff; 
+}
+.appProjectForm button > svg {
+  margin-right: 7px;
 }
 .projectsList {
-  width: 440px;
+  width: 800px;
   margin: 20px auto 0;
 }
 .projectsList > div {
   margin-bottom: 10px;
 }
+.App .projectContainer {
+  border-radius: 8px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #94c6f3;
+}
+.App .projectContainer a {
+  color: #484848;
+  text-decoration: none;
+  padding-bottom: 3px;  
+}
+.App .projectContainer a:hover{
+  border-bottom: 1px solid #484848;
+}
+.App .projectControls svg {
+  fill: #484848;
+  opacity: .8;
+}
 .projectContainer {
-  padding: 10px;
-  background: antiquewhite;
+  padding: 10px 3px 10px 16px;
+  background: #4576b3;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 30px;
+  margin-top: 8px; 
+}
+.projectContainer input {
+  width: 400px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+}
+.projectContainer h3 {
+  font-weight: 400;
+}
+.projectControls svg {
+  fill: #fff;
 }
 .TaskForm {
   display: flex;
   height: 40px;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 5px 7px 5px 10px;
   align-items: center;
-  background: #eee;
+  background: #efefef;
 }
 .TaskForm input {
-  width: 300px;
+  width: 640px;
   height: 30px;
   border: none;
   border-radius: 5px 0 0 5px;
   padding: 0 0 0 5px;
+}
+.TaskForm input:focus,
+.taskTitle input:focus {
+  outline: none;
 }
 .TaskForm button {
   width: 90px;
   height: 30px;
   border-radius: 0 5px 5px 0;
   border: none;
+  background: #90c7aa;
 }
 .tasksList {
   background: #fff;
@@ -55,7 +112,7 @@
   align-items: center;
   border-top: 1px solid #eee;
   cursor: pointer;
-  height: 36px;
+  height: 40px;
 }
 .tasksList > div:hover {
   background: cornsilk;
@@ -65,6 +122,16 @@
 }
 .TaskControlls {
   display: flex;
+}
+span.TaskControlls{
+  border-left: 1px solid #ddd;
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  height: 37px;
+}
+.TaskControlls svg{
+  fill: #484848;
 }
 .tasksList button {
   background: none;
@@ -78,6 +145,19 @@
 }
 .taskTitle {
   flex-grow: 1;
+  border-left: 1px solid #ddd;
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 25px;
+  color: #716c6c;
+}
+.taskTitle input {
+  width: 500px; 
+  height: 27px; 
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  padding-left: 10px;  
 }
 .actionButton {
   background: none;
@@ -86,4 +166,23 @@
   line-height: 0;
   margin: 0 5px;
   cursor: pointer;
+}
+.project-item {
+  width: 800px;
+  margin: 5px auto 0; 
+}
+.project-item > a {
+  text-decoration: none;
+}
+.task-item {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.task-item input[type="checkbox"] {
+  margin-right: 7px;
+}
+
+@media (max-width: 9408px) {
+ 
 }

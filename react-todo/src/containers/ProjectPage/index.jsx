@@ -66,8 +66,8 @@ class ProjectPage extends Component {
       <h3>{title}</h3>;
 
     return (
-      <div>
-        <Link to="/">&lt;Home</Link>
+      <div className="project-item">
+        <Link to="/">&lt;&lt; Home</Link>
         <div className="projectContainer">
           {Title}
 

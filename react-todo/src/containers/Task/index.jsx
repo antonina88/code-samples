@@ -86,7 +86,6 @@ class Task extends Component {
     const {
       completed,
       taskId,
-      order,
       topDisabled,
       bottomDisabled
     } = this.props;
@@ -94,7 +93,7 @@ class Task extends Component {
     const { editableTitle, isEditEnabled } = this.state;
 
     return (
-      <div>
+      <div className="task-item">
         <input
           type="checkbox"
           checked={completed}

@@ -1,15 +1,13 @@
 import React, { Component } from "react";
 
-import { AddIcon } from "../Icons"
+import { AddIcon } from "../Icons";
 
 export default class TaskForm extends Component {
   constructor(props) {
     super(props);
-    
     this.state = {
       title: ""
     };
-
     this.onChange = this.onChange.bind(this);
     this.clearForm = this.clearForm.bind(this);
   }
@@ -19,7 +17,6 @@ export default class TaskForm extends Component {
       title: ev.target.value
     });
   }
-
   clearForm() {
     this.setState({
       title: ""
@@ -33,7 +30,6 @@ export default class TaskForm extends Component {
     return (
       <div className="TaskForm">
         <AddIcon />
-
         <form
           onSubmit={ev => {
             ev.preventDefault();
